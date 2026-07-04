@@ -58,15 +58,102 @@
             <p>
                 Felix Klein profoundly changed our understanding of geometry. Instead of focusing on figures, 
                 Klein proposed that <strong>geometry is the study of properties of a space that are invariant under a given group of transformations</strong>.
-            </p>
-            <p>
+                <br>
                 For instance, let $X$ be a space and $G$ a group acting on $X$. <br>
                 - Euclidean geometry is associated with the group of rigid motions (isometries).<br>
-                - Projective geometry is associated with the projective group $PGL(n+1, \mathbb{F})$.<br>
-                - Topology is the study of invariants under the group of all homeomorphisms.
+                - Projective geometry is associated with the projective group $PGL(n+1, \mathbb{F})$. <br>
+                - Topology is the study of invariants under the group of all homeomorphisms. <br> 
+             Here a class of groups corresponds to many geometric spaces consisting of a certain geometry, while a certain group corresponds to a certain geometric space. 
             </p>
-            <p> The idea embedded in the Erlangen program by Klein is a radical departure from tradition. It positions groups or transformations as foundational objects, 
-            treating spaces merely as a consequence of these groups. 
+            <p> The idea embedded in the Erlangen program is a radical departure from tradition. It positions groups or transformations as foundational objects, 
+            treating (geometric) spaces merely as a consequence of these groups. Based on this idea, 
+            one can draw some other conclusions: Since groups are a priori while geometric spaces are a posteriori, any geometric spaces could be constructed based on some groups. 
+            That is, a group is given in priori and then one can use this group to construct geometric space. This space should be the only one that is invariant under the action of this
+            group. 
+            <br> 
+            Another question arises as a consequence of this idea: How can we construct a geometric space starting from a group without any other extra structures or extra
+            spaces? <br> 
+            Since we only have a group $G$, we must start from the inner of $G$. We have the subgroups of this group and we can treat some subgroup $H$ as a point in the space. 
+            The quotient $G/H$ consists of all points in a geometric space. Here $G/H$ merely means the collection of all left cosets $\{gH: g\in G\}$. So, $H$ is not necessarily 
+            normal to $G$. Such a space is a homogeneous space. <br> 
+            Based on these ideas, people have found a lot of geometric spaces that correspond to various groups, given in the following table.  
+              <table>
+                <tr> 
+                    <th>Groups</th> 
+                    <th>Geometric realization</th> 
+                    <th>Mechanism</th>
+                </tr>
+                <tr> 
+                  <td>Dihedral groups</td>
+                  <td>regular $n$-gons</td> 
+                  <td></td>
+                <tr>
+                    <td>Free groups $F_n$</td>
+                    <td>regular trees</td>
+                    <td></td>
+                </tr>
+                <tr>
+                  <td>Free abelian groups $\mathbb{Z}^n$</td>
+                     <td>tori</td>
+                     <td></td>
+                </tr>
+                <tr>
+                  <td>Amalgamated free product $G_1*_A G_2$</td>
+                     <td>Bass-Serre tree</td>
+                     <td></td>
+                </tr>
+                <tr>
+                  <td>HNN extension</td>
+                     <td></td>
+                     <td></td>
+                </tr>
+                <tr>
+                  <td>Braid groups</td>
+                     <td>Braid models</td>
+                     <td></td>
+                </tr>
+                <tr>
+                  <td>Coxeter groups</td>
+                     <td>Davis complexes (CAT(0) space)</td>
+                     <td></td>
+                </tr>
+                <tr> 
+                  <td>Artin groups</td> 
+                  <td>Salvetti complexes</td> 
+                  <td></td> 
+                <tr>
+                  <td>Amenable groups</td>
+                     <td>Spaces with Fl&oslash;ner sequences</td>
+                     <td></td>
+                </tr> 
+                <tr>
+                  <td>Outer automorphism groups $mathrm{Out}(F_n)$</td>
+                     <td>Culler-Vogtmann spaces</td>
+                     <td></td>
+                </tr>
+                <tr> 
+                  <td>Mapping class groups</td>
+                  <td>Teichm&uuml;ller spaces</td> 
+                  <td></td> 
+                </tr>
+                <tr> 
+                  <td>Absolute Galois group $\mathrm{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})$</td> 
+                  <td>Dessin d'enfants</td> 
+                  <td></td> 
+                </tr> 
+
+
+
+
+
+
+
+              </table>
+            </p> 
+            <p> This perspective upon Erlangen program, could be categorical. For one certain group $G$, it determines a certain geometric space that this group acts invariantly 
+            on it. The group $G$ could be made into a category $\mathbf{B}G$. It could be viewed as a functor from the category of this group $\mathbf{B}G$ to the category of 
+            topological spaces. So Erlangen program provides a functor: $$\mathbf{B}G \rightarrow \mathbf{Top}$$ 
+
             </p>
  
             <h3 id="algebraic">Algebraic Geometry</h3>
